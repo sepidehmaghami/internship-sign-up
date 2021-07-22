@@ -11,35 +11,32 @@
 <body>
 
     <article>
-        <section>
+        <section class="page-display">
             <div>
-                <img src="./image/Mobile_login.svg" alt="image sign up">
-                <p>Start for free and get attractive offers.</p>
+                <img src="./image/login.svg" alt="image sign up" class="SignUp">
+                <p class="text-login">Start for free and get attractive offers.</p>
             </div>
             <div>
                 <h1>Get's started</h1>
-                <p>Already have an account? <span>Log in</span></p>
-                <a href="https://google.com"> Sign up with Google </a>
-                <a href="https://facebook.com"> Sign up with Facebook </a>
+                <p>Already have an account? <a class="link-form">Log in</a></p>
+                <a href="#" class="btn-Google">Sign up with Google</a>
+                <a href="#" class="btn-Facebook">Sign up with Facebook</a>
             </div>
             <div>
-                <span>or</span>
+                <span id="line_gray">or</span>
             </div>
-            <form action="">
-                <label for="mail">Email address</label>
-                <input type="email" id="mail" required>
+            <form action="" class="form-flex">
+                <label for="email">Email address</label>
+                <input type="email" id="email" required>
                 <label for="password">Password</label>
                 <input type="password" id="password" required minlength="6">
-                <input type="checkbox" required>
-                <label for="">I agree to Platform's <span>Terms of Service</span> and <span>Privacy Policy</span></label>
-                <a href="#">
-                    <button type="submit">Register</button>
-                </a>
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to Platform's <a href="#" class="link-form">Terms of Service</a> and <a href="#" class="link-form">Privacy Policy</a></label>
+                <button type="submit" class="btn-form">Register</button>
             </form>
             </div>
         </section>
     </article>
-
 </body>
 
 </html>

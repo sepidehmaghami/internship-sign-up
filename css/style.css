@@ -1,0 +1,98 @@
+body {
+    background-color: tomato;
+    margin: 30px;
+    padding: 30px;
+}
+
+.link-form {
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.img-signup {
+    background-color: #fab1a0;
+    border-radius: 10px;
+}
+
+.body-signup {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.btn-form {
+    background-color: tomato;
+    border: 1px solid tomato;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.titr-form {
+    font-size: xx-large;
+    margin: 0px;
+}
+
+.text-signup {
+    color: #fff;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.btn-google {
+    border: 1px solid grey;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.btn-facebook {
+    border: 1px solid #3742fa;
+    background-color: #3742fa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.text-form {
+    color: grey;
+    margin: 10px 0px 40px 0px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: tomato;
+}
+
+input[type="checkbox"] {
+    outline: none !important;
+    border: 1px solid tomato;
+    background-color: tomato;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}

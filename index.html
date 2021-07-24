@@ -6,34 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
     <article>
         <section class="page-display">
-            <div>
-                <img src="./image/login.svg" alt="image sign up" class="SignUp">
-                <p id="text-login">Start for free and get attractive offers.</p>
+            <div class="img-signup">
+                <img src="./image/login.svg" alt="sign up" class="image">
+                <p class="text-signup">Start for free and get attractive offers.</p>
             </div>
-            <div>
-                <h1>Get's started</h1>
-                <p>Already have an account? <a class="link-form">Log in</a></p>
-                <a href="#" class="btn-Google">Sign up with Google</a>
-                <a href="#" class="btn-Facebook">Sign up with Facebook</a>
-            </div>
-            <div>
-                <span id="line_gray">or</span>
-            </div>
-            <form action="" class="form-flex">
-                <label for="email">Email address</label>
-                <input type="email" id="email" required>
-                <label for="password">Password</label>
-                <input type="password" id="password" required minlength="6">
-                <input type="checkbox" id="agree" required>
-                <label for="agree">I agree to Platform's <a href="#" class="link-form">Terms of Service</a> and <a href="#" class="link-form">Privacy Policy</a></label>
-                <button type="submit" class="btn-form">Register</button>
-            </form>
+            <div class="body-signup">
+                <div>
+                    <h1 class="titr-form">Get's started.</h1>
+                    <p class="text-form">Already have an account? <a class="link-form">Log in</a></p>
+                    <a href="#" class="btn-google">Sign up with Google</a>
+                    <a href="#" class="btn-facebook">Sign up with Facebook</a>
+                </div>
+                <div>
+                    <p id="line-or">or</p>
+                </div>
+                <form action="" class="form-flex" autocomplete="on">
+                    <label class="label" for="email">Email address</label>
+                    <input placeholder="Enter your email" type="email" id="email" required>
+                    <label class="label" for="password">Password</label>
+                    <input placeholder="Enter your password" type="password" id="password" required minlength="6">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree" class="text-form">I agree to Platform's <a href="#" class="link-form">Terms of Service</a> and <a href="#" class="link-form">Privacy Policy</a></label>
+                    <button type="submit" class="btn-form">Register</button>
+                </form>
             </div>
         </section>
     </article>

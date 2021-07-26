@@ -8,6 +8,8 @@
     <title>Sign Up</title>
     <link rel="icon" href="./image/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" integrity="sha384DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" rel="stylesheet">
 </head>
 
 <body>
@@ -21,18 +23,24 @@
             <div class="body-signup">
                 <div>
                     <h1 class="titr-form">Get's started.</h1>
-                    <p class="text-form">Already have an account? <a class="link-form">Log in</a></p>
-                    <a href="#" class="btn-google">Sign up with Google</a>
-                    <a href="#" class="btn-facebook">Sign up with Facebook</a>
+                    <p class="text-form">Already have an account? <a class="link-form" href="#">Log in</a></p>
+                    <a href="#" class="btn-google"><img src="./image/icon-google.png" class="icon-google">Sign up with Google</a>
+                    <a href="#" class="btn-facebook"><i class="fab fa-facebook-f"></i>Sign up with Facebook</a>
                 </div>
-                <div>
-                    <p id="line-or">or</p>
+                <div class="divider">
+                    <p class="line-or">or</p>
                 </div>
                 <form action="" class="form-flex" autocomplete="on">
                     <label class="label" for="email">Email address</label>
-                    <input placeholder="Enter your email" type="email" id="email" required>
+                    <div class="input-container">
+                        <i class="far fa-envelope icon-container"></i> <input placeholder="Enter your email" type="email" id="email" required class="input-border">
+                    </div>
+
                     <label class="label" for="password">Password</label>
-                    <input placeholder="Enter your password" type="password" id="password" required minlength="6">
+                    <div class="input-container">
+                        <i class="fas fa-lock icon-container"></i>
+                        <input placeholder="Enter your password" type="password" id="password" required minlength="6" class="input-border">
+                    </div>
                     <input type="checkbox" id="agree" required>
                     <label for="agree" class="text-form">I agree to Platform's <a href="#" class="link-form">Terms of Service</a> and <a href="#" class="link-form">Privacy Policy</a></label>
                     <button type="submit" class="btn-form">Register</button>

@@ -6,7 +6,8 @@
     .main {
         display: flex;
         max-height: 650px;
-        margin: 0px 100px;
+        width: 90%;
+        margin: 35px 5%;
     }
     
     .link-form {
@@ -20,13 +21,14 @@
         border-radius: 10px;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
-        width: 60%;
-        height: 650px;
+        flex-grow: 8;
+        display: flex;
+        flex-direction: column;
     }
     
     .img-signup img {
-        max-height: 550px;
-        width: 100%;
+        max-height: 560px;
+        flex-grow: 1;
     }
     
     .body-signup {
@@ -34,9 +36,14 @@
         border-radius: 10px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
-        width: 50%;
-        height: 650px;
-        padding: 0px 90px;
+        flex-grow: 4;
+        max-height: 650px;
+        padding: 3%;
+    }
+    
+    .form-flex {
+        display: flex;
+        flex-direction: column;
     }
     
     .btn-form {
@@ -45,15 +52,12 @@
         border-radius: 7px;
         color: #fff;
         padding: 15px;
-        font-size: 15px;
-        width: 100%;
-        margin-top: 40px;
+        font-size: 17px;
         cursor: pointer;
     }
     
     .titr-form {
         font-size: xx-large;
-        margin-top: 65px;
         margin-bottom: 0;
     }
     
@@ -62,9 +66,14 @@
         font-weight: bold;
         font-size: large;
         padding-bottom: 100px;
-        width: 40%;
         margin: auto;
         text-align: center;
+    }
+    
+    .btn-signup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .btn-google {
@@ -76,11 +85,25 @@
         border-radius: 5px;
         font-weight: 600;
         padding: 21px 5px;
-        margin-right: 4px;
         padding-left: 40px;
-        width: 43%;
-        display: inline-block;
         text-align: center;
+        flex-grow: 1;
+    }
+    
+    .icon-google {
+        margin-right: 5px;
+        max-width: 28px;
+        max-height: 28px;
+        position: absolute;
+        top: 15px;
+        right: 72%;
+    }
+    
+    @media screen and (max-width:1104px) {
+        .icon-google {
+            top: 15px;
+            right: 80%;
+        }
     }
     
     .btn-facebook {
@@ -92,34 +115,8 @@
         font-weight: 600;
         padding: 15px 5px;
         margin-left: 4px;
-        width: 43%;
-        display: inline-block;
         text-align: center;
-    }
-    
-    .text-form {
-        color: grey;
-        margin: 10px 0px 50px 0px;
-    }
-    
-    .label {
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    
-    .input-border:focus {
-        outline: none !important;
-        border-color: tomato !important;
-    }
-    
-    .input-border {
-        width: 90%;
-        margin-bottom: 15px;
-        margin-top: 5px;
-        padding: 10px;
-        padding-left: 35px;
-        border: 1px solid #000;
-        border-radius: 5px;
+        flex-grow: 1;
     }
     
     .fa-facebook-f {
@@ -131,13 +128,29 @@
         margin-right: 5px;
     }
     
-    .icon-google {
-        margin-right: 5px;
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        top: 15px;
-        left: 37px;
+    .text-form {
+        color: grey;
+        margin: 10px 0px 50px 0px;
+    }
+    
+    .label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .input-border:focus {
+        outline: none !important;
+        border-color: tomato !important;
+    }
+    
+    .input-border {
+        width: 92%;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        padding: 10px;
+        padding-left: 35px;
+        border: 1px solid #000;
+        border-radius: 5px;
     }
     /* .divider {
     opacity: 0.7;
@@ -219,4 +232,16 @@
         border-color: tomato;
         color: #fff;
         transition: .2s;
+    }
+    
+    @media (max-width:800px) {
+        .main {
+            display: block;
+            flex-direction: column;
+            margin: 0px 5%;
+        }
+        .body-signup,
+        .img-signup {
+            border-radius: 0%;
+        }
     }

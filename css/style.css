@@ -1,18 +1,17 @@
     body {
         background-color: tomato;
         font-family: sans-serif;
-        margin: 10px;
     }
     
     .main {
         position: absolute;
         left: 50%;
-        top: 49%;
-        transform: translate(-50%, -50%);
+        top: 45%;
+        transform: translate(-50%, -45%);
         display: flex;
         flex-wrap: wrap;
         width: 90%;
-        margin: 5px auto;
+        max-height: 98vh;
     }
     
     .link-form {
@@ -241,8 +240,6 @@
         .main {
             display: block;
             flex-direction: column;
-            left: 50%;
-            top: 85%;
         }
         .body-signup,
         .img-signup {

@@ -4,10 +4,14 @@
     }
     
     .main {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
-        max-height: 650px;
+        flex-wrap: wrap;
         width: 90%;
-        margin: 35px 5%;
+        margin: 0px auto;
     }
     
     .link-form {
@@ -21,9 +25,10 @@
         border-radius: 10px;
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
-        flex-grow: 8;
+        flex-grow: 6;
         display: flex;
         flex-direction: column;
+        padding: 0px 6%;
     }
     
     .img-signup img {
@@ -36,9 +41,9 @@
         border-radius: 10px;
         border-bottom-left-radius: 0px;
         border-top-left-radius: 0px;
-        flex-grow: 4;
+        flex-grow: 6;
         max-height: 650px;
-        padding: 3%;
+        padding: 4%;
     }
     
     .form-flex {
@@ -46,7 +51,7 @@
         flex-direction: column;
     }
     
-    .titr-form {
+    .title-form {
         font-size: xx-large;
         margin-bottom: 0;
     }
@@ -84,26 +89,21 @@
         text-decoration: none;
         border-radius: 5px;
         font-weight: 600;
-        padding: 21px 5px;
+        padding: 21px 0px;
         padding-left: 40px;
         text-align: center;
         flex-grow: 1;
     }
     
     .icon-google {
-        margin-right: 5px;
         max-width: 28px;
         max-height: 28px;
         position: absolute;
-        top: 15px;
-        right: 72%;
-    }
-    
-    @media screen and (max-width:1104px) {
-        .icon-google {
-            top: 15px;
-            right: 80%;
-        }
+        padding-top: 4%;
+        padding-right: 20%;
+        top: 50%;
+        left: 30%;
+        transform: translate(-60%, -65%);
     }
     
     .btn-facebook {
@@ -138,13 +138,13 @@
         margin-bottom: 5px;
     }
     
-    .input-border:focus {
+    .input:focus {
         outline: none !important;
         border-color: tomato !important;
     }
     
-    .input-border {
-        width: 92%;
+    .input {
+        width: 100%;
         margin-bottom: 15px;
         margin-top: 5px;
         padding: 10px;
@@ -197,9 +197,11 @@
     
     .input-container {
         position: relative;
+        display: flex;
+        flex-grow: 1;
     }
     
-    .icon-container {
+    .icon {
         position: absolute;
         top: 15px;
         left: 10px;
@@ -234,14 +236,30 @@
         transition: .2s;
     }
     
-    @media (max-width:800px) {
+    @media (max-width:1088px) {
         .main {
             display: block;
             flex-direction: column;
-            margin: 0px 5%;
+            left: 50%;
+            top: 85%;
         }
         .body-signup,
         .img-signup {
             border-radius: 0%;
+        }
+        .icon-google {
+            transform: translate(-25%, -65%);
+        }
+    }
+    
+    @media (max-width:1008px) {
+        .icon-google {
+            transform: translate(-35%, -65%);
+        }
+    }
+    
+    @media (max-width:700px) {
+        .icon-google {
+            transform: translate(-62%, -65%);
         }
     }

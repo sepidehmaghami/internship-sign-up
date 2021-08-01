@@ -46,16 +46,6 @@
         flex-direction: column;
     }
     
-    .btn-form {
-        background-color: tomato;
-        border: 1px solid tomato;
-        border-radius: 7px;
-        color: #fff;
-        padding: 15px;
-        font-size: 17px;
-        cursor: pointer;
-    }
-    
     .titr-form {
         font-size: xx-large;
         margin-bottom: 0;
@@ -68,6 +58,16 @@
         padding-bottom: 100px;
         margin: auto;
         text-align: center;
+    }
+    
+    .btn-form {
+        background-color: tomato;
+        border: 1px solid tomato;
+        border-radius: 7px;
+        color: #fff;
+        padding: 15px;
+        font-size: 17px;
+        cursor: pointer;
     }
     
     .btn-signup {

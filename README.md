@@ -1,7 +1,8 @@
 # internship-sign-up
 Implemented with HTML5 and css
 
+[You can see github pages](https://sepidehmaghami.github.io/internship-sign-up/)
 
-![Capture](https://user-images.githubusercontent.com/87614385/127286681-29e07388-35bb-4c8f-8944-2cdae5a3a24a.PNG)
+![capture-1](https://user-images.githubusercontent.com/87614385/129045295-01e94158-6b03-4671-9efa-27d5ce1e19c5.PNG)
+![capture-2](https://user-images.githubusercontent.com/87614385/129045305-ce88bfc9-eef1-435c-8657-ef384c3a7e09.PNG)
 
-![Capture 2](https://user-images.githubusercontent.com/87614385/127286738-9bb45538-8829-4fdb-9ce1-6d7bb084119a.PNG)
